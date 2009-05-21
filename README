@@ -10,3 +10,16 @@ media served correctly without remembering what exactly I need to do.  Has a
 views.py with a bunch of imports so I don't have to remember or look up where
 all of the stuff that I need is.
 
+There is a PROJECT_DIR setting, a LIVE setting and everything is mobile and
+safely shareable from the beginning.  See DOC for how to use.
+
+Oh yeah, and there is a wsgi file for deployment and a good fluid boiler layout
+and css to make it really easy.
+
+Thanks to http://designinfluences.com/. For the liquid grid layout.
+
+Thanks to everyone who works on jQuery and Django.
+
+There is a lot of static media that you can take or leave.  A home url is
+already plugged directly into templates/base.html.
+
