@@ -1,0 +1,25 @@
+mv empty_local_settings.py local_settings.py
+
+open a Python Interpreter and run:
+
+from random import choice
+''.join([choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)') for i in range(50)])
+
+paste the output_of_that_command as the 
+
+SECRET_KEY = ....
+
+in your local_settings.py
+
+then you can run syncdb and have an sqlite DB
+runserver will serve your static files while LIVE=False
+
+set LIVE=True to try out your local_settings for production MEDIA and DB adapter
+
+Also, to remove the boiler-plate revision control and start your own simply:
+
+sudo rm -r .git/ 
+
+from the projects root dir
+and git init, hg init or what have you...
+
