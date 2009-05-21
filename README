@@ -1,0 +1,12 @@
+Django-Boiler
+=============
+
+A ridiculous app that just speeds my initial build up to development by
+quite some amount of time really.  Does all of the adjustments to settings
+that I like and makes the project conveniently shareable with local_settings.py
+and a premade .gitignore.  All of those little things that I have to do before
+I start shifting from development to production but I just want the admin
+media served correctly without remembering what exactly I need to do.  Has a
+views.py with a bunch of imports so I don't have to remember or look up where
+all of the stuff that I need is.
+
