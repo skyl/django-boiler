@@ -1,9 +1,9 @@
 import os, sys
 # Use packages?  Anyhoo, altering path at runtime...
-sys.path.append('/home/skyl/projects/')
-sys.path.append('/home/skyl/projects/skyl/')
+sys.path.append('/path/to/projects/')
+sys.path.append('/path/to/projects/thisProjectDir/')
 # might have to be app.settings, nope
-os.environ['DJANGO_SETTINGS_MODULE'] = 'skyl.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'thisProjectDir.settings'
 
 import django.core.handlers.wsgi
 
