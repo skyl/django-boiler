@@ -1,7 +1,7 @@
 Django-Boiler
 =============
 
-A ridiculous app that just speeds my initial build up to development by
+A base project that just speeds my initial build up to development by
 quite some amount of time really.  Does all of the adjustments to settings
 that I like and makes the project conveniently shareable with local_settings.py
 and a premade .gitignore.  All of those little things that I have to do before
