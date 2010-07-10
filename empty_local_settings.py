@@ -5,11 +5,10 @@ SECRET_KEY = ''
 MEDIA_URL = ''
 ADMIN_MEDIA_PREFIX = ''
 
-DATABASE_ENGINE = ''
-DATABASE_NAME = ''
-DATABASE_USER = ''
-DATABASE_PASSWORD = ''
-DATABASE_HOST = ''
-
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase'
+    }
+}
 

@@ -11,11 +11,14 @@ ADMINS = (
 
 MANAGERS = ADMINS
 if not LIVE:
-    DATABASE_ENGINE = 'sqlite3'
-    DATABASE_NAME = os.path.join(PROJECT_DIR, 'dev.db')
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(PROJECT_DIR, 'dev.db')
+        }
+    }
 else:
-    from local_settings import DATABASE_ENGINE, DATABASE_NAME,\
-            DATABASE_USER, DATABASE_PASSWORD, DATABASE_HOST
+    from local_settings import DATABASES
 
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 TIME_ZONE = 'America/New_York'
